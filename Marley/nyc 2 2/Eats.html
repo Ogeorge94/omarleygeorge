@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tour of NYC</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/Eats.css">
+</head>
+<body>
+	<ul class="nav">
+		<div class="logo">
+			<a href="nyc.html"><img class="logo-image" src="images/nyclogo2.png"></a>
+			</div>
+		<li><a href="nyc.html">Home</a></li>
+		<li><a href="boroughs.html">Boroughs</a></li>
+		<li><a href="#">Eats</a></li>
+		<li><a href="Entertainment.html">Entertainment</a></li>
+		<input type="text" placeholder="Search..."
+	maxlength="20" id="Search"><input type="submit">
+</form>
+	</ul>
+	<div class ="banner">
+		<img class="banner-image" src="images/nycfood.gif">
+	</div>
+<div id="mainbody">    
+   <div id="banner">
+       <div id="h1">
+           <h1>Are You Hungry</h1>
+
+           
+       </div>
+       <div class="slide">
+           <img class="mySlides" src="http://danielarestaurant.com/images/pnp2.jpg" alt="queen">
+           <img class="mySlides" src="http://kid101.com/wp-content/uploads/2015/05/restaurants.jpg" alt="nyc">
+           <img class="mySlides" src="http://newyork.seriouseats.com/images/dumont.jpg" alt="nyc2">
+           <img class="mySlides" src="http://btsrv.budgettravel.com/bt-srv/email/images/marquee_090810.jpg" alt="nyc3">
+           <img class="mySlides" src="http://whygo-amr.s3.amazonaws.com/www.newyorklogue.com/files/2011/10/NY-food-hot-dog.jpg" alt="nyc4">
+           <img class="mySlides" src="http://www.jazzhostels.com/wp-content/uploads/2012/10/photo-new-york-city-pizza-food-cc.jpg">
+           <img class="mySlides" src="http://static5.businessinsider.com/image/56269ee6bd86eff45b8b8464/we-ate-at-the-famous-new-york-city-food-truck-that-has-gone-international.jpg" alt="nyc5">
+       </div>
+   </div>
+</div>
+<script>
+   var myIndex = 0;
+       carousel();
+
+   function carousel() {
+   var i;
+   var x = document.getElementsByClassName("mySlides");
+   for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+   }
+   myIndex++;
+   if (myIndex > x.length) {myIndex = 1}    
+   x[myIndex-1].style.display = "block";  
+   setTimeout(carousel, 2000); // Change image every 8  seconds
+   }
+   </script>
+
+
+	</body>
+	</html>
+
+	

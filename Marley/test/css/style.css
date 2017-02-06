@@ -1,0 +1,28 @@
+body{
+	height: 956px;
+	width: 100%;
+	margin: 0;
+}
+header {
+	width: 70%;
+	height: 20%;
+	background-color: red;
+  float: right;
+}
+#content_one {
+ 	height: 80%;
+ 	width: 30%;
+  background-color: teal;
+  }
+#content_two {
+  height: 60%;
+  width: 70%;
+  background-color: slateblue;
+  float: right;
+  }
+footer {
+  height: 20%;
+  width: 100%;
+  background-color: salmon;
+
+  }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tour of NYC</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/Entertainment.css">
+</head>
+<body>
+	<ul class="nav">
+		<div class="logo">
+			<a href="nyc.html"><img class="logo-image" src="images/nyclogo2.png"></a>
+			</div>
+		<li><a href="nyc.html">Home</a></li>
+		<li><a href="boroughs.html">Boroughs</a></li>
+		<li><a href="Eats.html">Eats</a></li>
+		<li><a href="#">Entertainment</a></li>
+		<input type="text" placeholder="Search..."
+	maxlength="20" id="Search"><input type="submit">
+</form>
+	</ul>
+	<div class ="banner">
+		<img class="banner-image" src="images/nycmove3.gif">
+	</div>
+	
+<div id="mainbody">    
+   <div id="banner">
+       <div id="h1">
+           <h1>Are You Entertained</h1>
+
+           
+       </div>
+       <div class="slide">
+           <img class="mySlides" src="https://static01.nyt.com/images/2017/01/20/arts/20LISTINGSPOP/20LISTINGSPOP-videoLarge.jpg" alt="queen">
+           <img class="mySlides" src="http://www.hanklane.com/images/home-page-top.jpg" alt="nyc">
+           <img class="mySlides" src="http://cdn.c.photoshelter.com/img-get2/I0000ZfV899SdOwY/fit=1000x750/NYC-Radio-City-Music-Hall-001.jpg" alt="nyc2">
+           <img class="mySlides" src="https://s-media-cache-ak0.pinimg.com/736x/fe/5e/69/fe5e690e56bc8d15f833b3cb6b6c91e1.jpg" alt="nyc3">
+           <img class="mySlides" src="https://www.galavantier.com/sites/default/files/Pacha-05.jpg" alt="nyc4">
+           <img class="mySlides" src="http://www.goingtonewyork.com/sites/default/files/styles/masthead/public/mastheads/nyc-entertainment.jpg?itok=puSa-JLw">
+           <img class="mySlides" src="https://aka.nyc/wp-content/uploads/2016/12/3.jpg" alt="nyc5">
+       </div>
+   </div>
+</div>
+<script>
+   var myIndex = 0;
+       carousel();
+
+   function carousel() {
+   var i;
+   var x = document.getElementsByClassName("mySlides");
+   for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+   }
+   myIndex++;
+   if (myIndex > x.length) {myIndex = 1}    
+   x[myIndex-1].style.display = "block";  
+   setTimeout(carousel, 2000); // Change image every 8  seconds
+   }
+   </script>
+   
+
+	</body>
+	</html>
+
+	
+
+
+	

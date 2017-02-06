@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tour of NYC</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/boroughs.css">
+</head>
+<body>
+	<ul class="nav">
+		<div class="logo">
+			<a href="nyc.html"><img class="logo-image" src="images/nyclogo2.png"></a>
+			</div>
+		<li><a href="nyc.html">Home</a></li>
+		<li><a href="#">Boroughs</a></li>
+		<li><a href="Eats.html">Eats</a></li>
+		<li><a href="Entertainment.html">Entertainment</a></li>
+		<input type="text" placeholder="Search..."
+	maxlength="20" id="Search"><input type="submit">
+</form>
+	</ul>
+	<div class ="banner">
+		<img class="banner-image" src="images/mta2.gif">
+	</div>
+
+<div id="mainbody">    
+   <div id="banner">
+       <div id="h1">
+           <h1>Weclome to New York City</h1>
+
+           <p>The City of New York, often called New York City or simply New York, is the most populous city in the United States. With an estimated 2015 population of 8,550,405 distributed over a land area of just 305 square miles (790 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the state of New York, the city is the center of the New York metropolitan area, one of the most populous urban agglomerations in the world. A global power city, New York City exerts a significant impact upon commerce, finance, media, art, fashion, research, technology, education, and entertainment, its fast pace defining the term New York minute. Home to the headquarters of the United Nations, New York is an important center for international diplomacy and has been described as the cultural and financial capital of the world. </p>
+       </div>
+       <div class="slide">
+           <img class="mySlides" src="https://cdn.viewing.nyc/assets/media/7210d8a98397a16e9d64715f87725418/elements/fd94daaefe351306c08517bdadd05731/xl/b33ba58c-e9d8-431c-97c1-1f23c1fd04b0_2x.jpg" alt="queen">
+           <img class="mySlides" src="http://loving-newyork.com/wp-content/uploads/2015/05/Dollarphotoclub_48836395-Staten-Island-Ferry-1600x960.jpg" alt="nyc">
+           <img class="mySlides" src="https://s-media-cache-ak0.pinimg.com/564x/c8/c3/d1/c8c3d10e274243c21687edc6a3465ffb.jpg" alt="nyc2">
+           <img class="mySlides" src="https://fansinaflashbulb.files.wordpress.com/2010/01/lyon_danny_68_1980.jpg" alt="nyc3">
+           <img class="mySlides" src="https://s-media-cache-ak0.pinimg.com/originals/30/c7/8a/30c78a5c36999b3d555089215cb569b6.jpg" alt="nyc4">
+           <img class="mySlides" src="http://www.wliw.org/21pressroom/files/2012/08/7.jpg">
+           <img class="mySlides" src="http://68.media.tumblr.com/tumblr_m0vn4deDg21roep5no1_1280.jpg" alt="nyc5">
+       </div>
+   </div>
+</div>
+<script>
+   var myIndex = 0;
+       carousel();
+
+   function carousel() {
+   var i;
+   var x = document.getElementsByClassName("mySlides");
+   for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+   }
+   myIndex++;
+   if (myIndex > x.length) {myIndex = 1}    
+   x[myIndex-1].style.display = "block";  
+   setTimeout(carousel, 2000); // Change image every 8  seconds
+   }
+   </script>
+
+
+	</body>
+	</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nav bar shrink</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/nav.css">
+<script type="text/javascript" src="javascript/nav.js"></script>
+<body>
+<nav>
+02
+  <div class="container">
+03
+    <div> <a href="#top"><img src="logo.png" alt="Logo" class="logo"></a> </div>
+04
+    <div class="menu">
+05
+      <ul class="nav">
+06
+        <li class="nav"><a href="#section-1">Section 1</a></li>
+07
+        <li class="nav"><a href="#section-2">Section 2</a></li>
+08
+        <li class="nav"><a href="#section-3">Section 3</a></li>
+09
+        <li class="nav"><a href="#section-4">Section 4</a></li>
+10
+        <li class="nav"><a href="#section-5">Section 5</a></li>
+11
+      </ul>
+12
+    </div>
+13
+  </div>
+14
+</nav>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+2
+<script src="scripts/prettySticky.js"></script>
+3
+
+<script src="scripts/jquery.smooth-scroll.min.js"></script>
+$(document).ready(function(){
+2
+  $(".nav a").smooth<a href="http://www.jqueryscript.net/tags.php?/Scroll/">Scroll</a>({
+3
+    offset: -$("nav").outerHeight()
+4
+  });
+5
+});
+
+
+
+
+</body>
+</html>
